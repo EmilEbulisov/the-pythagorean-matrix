@@ -12,7 +12,6 @@ namespace MatricaPifagora
         {
             //Переменная для ввода даты
             string data;
-            int datasum = 0;
             Console.WriteLine("Введите дату без использования вспомогательных знаков Пример:13122005");
             data = Console.ReadLine();
             int[] datamas = new int[data.Length];
@@ -24,39 +23,62 @@ namespace MatricaPifagora
             {
                 datamas[i] += int.Parse(data.Substring(i, 1));
             }
-            //Заполняем массив
-            /*for (int i = 0; i < data.Length; i++)
-            {
-                 summas[i] = data[i];
-            }*/
             //Вывод массива
-            Console.WriteLine("Массив: ");
+            Console.WriteLine("Ваша дата: ");
             for (int i = 0; i < datamas.Length; i++)
             {
                 Console.Write(datamas[i]);
             }
+            Console.WriteLine(" ");
+            int sum = 0;
 
-            int[] summas = new int [data.Length];
+            for (int i = 0; i < datamas.Length; i++)
+            {
+                sum += datamas[i];
+            }
+
+            Console.WriteLine("Первое рабочее число: " + sum);
+            int vch = sum;
+            string summ = sum.ToString();
+            int[] summas = new int[summ.Length];
+
+            //массив даты
+            summas[0] = int.Parse(summ.Substring(0, 1));
+            //массив из string переводим в int
+            for (int i = 1; i < summ.Length; i++)
+            {
+                summas[i] += int.Parse(summ.Substring(i, 1));
+            }
+            int sumtwo = 0;
+
+            for (int i = 0; i < summas.Length; i++)
+            {
+                sumtwo += summas[i];
+            }
+
+            Console.WriteLine("Второе рабочее число: " + sumtwo);
+            int sumthree = vch - datamas[0] * 2; 
+            Console.WriteLine("Третье рабочее число: " + sumthree);
+
+            string sam = sumthree.ToString();
+            int[] sammas = new int[sam.Length];
+
+            sammas[0] = int.Parse(sam.Substring(0, 1));
+            for (int i = 1; i < sam.Length; i++)
+            {
+                sammas[i] += int.Parse(sam.Substring(i, 1));
+            }
+            int sumfour = 0;
+
+            for (int i = 0; i < sammas.Length; i++)
+            {
+                sumfour += sammas[i];
+            }
+            Console.WriteLine("Второе рабочее число: " + sumfour);
+
+
+            Console.ReadLine();
             
-            Console.ReadLine();
-            // Инициализация переменной и массива
-            /*string pervoest = pervoe.ToString();
-            char[] array = new char[pervoest.Length];
-
-            // Перенос данных
-            for (int i = 0; i < pervoest.Length; i++)
-            {
-                array[i] = pervoest[i];
-            }
-
-            // Использование массива после переноса данных
-            Console.WriteLine("Массив: ");
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write(array[i]+" ");
-            }
-            Console.ReadLine();
-            */
         }
     }
 }

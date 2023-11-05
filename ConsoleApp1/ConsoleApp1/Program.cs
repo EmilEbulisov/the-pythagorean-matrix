@@ -74,9 +74,329 @@ namespace MatricaPifagora
             {
                 sumfour += sammas[i];
             }
-            Console.WriteLine("Второе рабочее число: " + sumfour);
+            Console.WriteLine("Четвертое рабочее число: " + sumfour);
+            //Теперь считаем матрицу
+            int tens = sum / 10;
+            int units = sum % 10;
 
+            int tens2 = sumtwo / 10;
+            int units2 = sumtwo % 10;
 
+            int tens3 = sumthree / 10;
+            int units3 = sumthree % 10;
+
+            int tens4 = sumfour / 10;
+            int units4 = sumfour % 10;
+
+            int b1 = 0;
+            int b2 = 0;
+            int b3 = 0;
+            int b4 = 0;
+            int b5 = 0;
+            int b6 = 0;
+            int b7 = 0;
+            int b8 = 0;
+            int b9 = 0;
+            //Проверяем десятки первого числа
+            if (tens == 1)
+            {
+                b1++;
+            }
+            else if (tens == 2)
+            {
+                b2++;
+            }
+            else if (tens == 3)
+            {
+                b3++;
+            }
+            else if (tens == 4)
+            {
+                b4++;
+            }
+            else if (tens == 5)
+            {
+                b5++;
+            }
+            else if (tens == 6)
+            {
+                b6++;
+            }
+            else if (tens == 7)
+            {
+                b7++;
+            }
+            else if (tens == 8)
+            {
+                b8++;
+            }
+            else if (tens == 9)
+            {
+                b9++;
+            }
+            
+            //Проверяем десятки второго числа
+            if (tens2 == 1)
+            {
+                b1++;
+            }
+            else if (tens2 == 2)
+            {
+                b2++;
+            }
+            else if (tens2 == 3)
+            {
+                b3++;
+            }
+            else if (tens2 == 4)
+            {
+                b4++;
+            }
+            else if (tens2 == 5)
+            {
+                b5++;
+            }
+            else if (tens2 == 6)
+            {
+                b6++;
+            }
+            else if (tens2 == 7)
+            {
+                b7++;
+            }
+            else if (tens2 == 8)
+            {
+                b8++;
+            }
+            else if (tens2 == 9)
+            {
+                b9++;
+            }
+            //desatki 3
+            //Проверяем десятки второго числа
+            if (tens3 == 1)
+            {
+                b1++;
+            }
+            else if (tens3 == 2)
+            {
+                b2++;
+            }
+            else if (tens3 == 3)
+            {
+                b3++;
+            }
+            else if (tens3 == 4)
+            {
+                b4++;
+            }
+            else if (tens3 == 5)
+            {
+                b5++;
+            }
+            else if (tens3 == 6)
+            {
+                b6++;
+            }
+            else if (tens3 == 7)
+            {
+                b7++;
+            }
+            else if (tens3 == 8)
+            {
+                b8++;
+            }
+            else if (tens3 == 9)
+            {
+                b9++;
+            }
+            //desatki4
+            //Проверяем десятки второго числа
+            if (tens4 == 1)
+            {
+                b1++;
+            }
+            else if (tens4 == 2)
+            {
+                b2++;
+            }
+            else if (tens4 == 3)
+            {
+                b3++;
+            }
+            else if (tens4 == 4)
+            {
+                b4++;
+            }
+            else if (tens4 == 5)
+            {
+                b5++;
+            }
+            else if (tens4 == 6)
+            {
+                b6++;
+            }
+            else if (tens4 == 7)
+            {
+                b7++;
+            }
+            else if (tens4 == 8)
+            {
+                b8++;
+            }
+            else if (tens4 == 9)
+            {
+                b9++;
+            }
+            //Проверяем единицы первого числа
+            if (units == 1)
+            {
+                b1++;
+            }
+            else if (units == 2)
+            {
+                b2++;
+            }
+            else if (units == 3)
+            {
+                b3++;
+            }
+            else if (units == 4)
+            {
+                b4++;
+            }
+            else if (units == 5)
+            {
+                b5++;
+            }
+            else if (units == 6)
+            {
+                b6++;
+            }
+            else if (units == 7)
+            {
+                b7++;
+            }
+            else if (units == 8)
+            {
+                b8++;
+            }
+            else if (units == 9)
+            {
+                b9++;
+            }
+            //Проверяем единицы второго числа
+            if (units2 == 1)
+            {
+                b1++;
+            }
+            else if (units2 == 2)
+            {
+                b2++;
+            }
+            else if (units2 == 3)
+            {
+                b3++;
+            }
+            else if (units2 == 4)
+            {
+                b4++;
+            }
+            else if (units2 == 5)
+            {
+                b5++;
+            }
+            else if (units2 == 6)
+            {
+                b6++;
+            }
+            else if (units2 == 7)
+            {
+                b7++;
+            }
+            else if (units2 == 8)
+            {
+                b8++;
+            }
+            else if (units2 == 9)
+            {
+                b9++;
+            }
+            //edinici 3
+            if (units3 == 1)
+            {
+                b1++;
+            }
+            else if (units3 == 2)
+            {
+                b2++;
+            }
+            else if (units3 == 3)
+            {
+                b3++;
+            }
+            else if (units3 == 4)
+            {
+                b4++;
+            }
+            else if (units3 == 5)
+            {
+                b5++;
+            }
+            else if (units3 == 6)
+            {
+                b6++;
+            }
+            else if (units3 == 7)
+            {
+                b7++;
+            }
+            else if (units3 == 8)
+            {
+                b8++;
+            }
+            else if (units3 == 9)
+            {
+                b9++;
+            }
+            //edinici 4
+            if (units4 == 1)
+            {
+                b1++;
+            }
+            else if (units4 == 2)
+            {
+                b2++;
+            }
+            else if (units4 == 3)
+            {
+                b3++;
+            }
+            else if (units4 == 4)
+            {
+                b4++;
+            }
+            else if (units4 == 5)
+            {
+                b5++;
+            }
+            else if (units4 == 6)
+            {
+                b6++;
+            }
+            else if (units4 == 7)
+            {
+                b7++;
+            }
+            else if (units4 == 8)
+            {
+                b8++;
+            }
+            else if (units4 == 9)
+            {
+                b9++;
+            }
+            Console.WriteLine("Однёрок = " + b1 + "\n Двоек = " + b2 + "\n Троек = " + b3 + "\n Четвёрок = " + b4 + "\n Пятёрок = " + b5 + "\n Шестёрок = " + b6 + "\n Семёрок = " + b7 + "\n Восьмёрок = " + b8 + "\n Девяток = " + b9);
             Console.ReadLine();
             
         }
